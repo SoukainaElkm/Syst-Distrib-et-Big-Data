@@ -12,10 +12,6 @@ public class ConsulConfigRestController {
     private MyConsulConfig myConsulConfig;
     @Autowired
     private MyVaultConfig myVaultConfig;
-    //@Value("${token.accessTokenTimeout}")
-    //private long accessTokenTimeout;
-    //@Value("${token.refreshTokenTimeout}")
-    //private long refreshTokenTimeout;
     @GetMapping("/myConfig")
     public Map<String,Object> myConfig(){
         return Map.of("consulConfig",myConsulConfig, "vaultConfig",myVaultConfig);
