@@ -1,0 +1,17 @@
+Customer-service / inventory-service / order-service
+
+h2
+jpa
+lombok
+spring web
+rest repository
+consul discovery
+config client
+actuator
+
+
+gateway-service:
+
+actuator
+gateway
+consul discovery
