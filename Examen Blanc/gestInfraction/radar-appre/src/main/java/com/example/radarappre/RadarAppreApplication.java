@@ -2,6 +2,8 @@ package com.example.radarappre;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class RadarAppreApplication {
@@ -9,5 +11,8 @@ public class RadarAppreApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RadarAppreApplication.class, args);
 	}
-
+	@Bean
+	RestTemplate restTemplate(){
+		return new RestTemplate();
+	}
 }
