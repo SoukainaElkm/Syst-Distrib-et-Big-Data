@@ -21,6 +21,4 @@ public class RadarRestController {
     public List<Radar> getAll(){
         return queryGateway.query(new FindAllRadars(), ResponseTypes.multipleInstancesOf(Radar.class)).join();
     }
-
-
 }

@@ -21,7 +21,6 @@ public class OwnerAggregate {
     public OwnerAggregate() {
         // Required by Axon
     }
-
     @CommandHandler
     public OwnerAggregate(CreateOwnerCommand command) {
         if (command.getName() == null || command.getName().isEmpty()) {
@@ -33,7 +32,6 @@ public class OwnerAggregate {
                 command.getDateOfBirth(),
                 command.getEmail()));
     }
-
     @EventSourcingHandler
     public void on(OwnerCreatedEvent event) {
         this.id = event.getId();

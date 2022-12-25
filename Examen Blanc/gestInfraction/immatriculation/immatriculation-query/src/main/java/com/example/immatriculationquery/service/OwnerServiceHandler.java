@@ -21,7 +21,6 @@ import java.util.List;
 @Slf4j
 public class OwnerServiceHandler {
     private OwnerRepository ownerRepository;
-
     @EventHandler
     @Transactional
     public void on(OwnerCreatedEvent event) {
@@ -33,13 +32,10 @@ public class OwnerServiceHandler {
         owner.setEmail(event.getEmail());
         ownerRepository.save(owner);
     }
-
-
     @QueryHandler
     public List<Owner> on(GetOwners query) {
         return ownerRepository.findAll();
     }
-
     @QueryHandler
     public Owner on(GetOwner query) {
         return ownerRepository.findById(query.getId()).get();

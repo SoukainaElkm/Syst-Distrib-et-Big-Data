@@ -19,7 +19,6 @@ import reactor.core.publisher.Mono;
 
 @SpringBootApplication
 public class GatewayApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(GatewayApplication.class, args);
 	}
@@ -27,7 +26,6 @@ public class GatewayApplication {
 	DiscoveryClientRouteDefinitionLocator discoveryClientRouteDefinitionLocator(ReactiveDiscoveryClient rdc, DiscoveryLocatorProperties dlp) {
 		return new DiscoveryClientRouteDefinitionLocator(rdc, dlp);
 	}
-
 	@Bean
 	public WebFilter corsFilter() {
 		return (ServerWebExchange ctx, WebFilterChain chain) -> {

@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class InfractionCommandApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(InfractionCommandApplication.class, args);
 	}
@@ -16,6 +15,4 @@ public class InfractionCommandApplication {
 	CommandBus commandBus(){
 		return SimpleCommandBus.builder().build();
 	}
-
-
 }

@@ -20,17 +20,14 @@ import java.util.concurrent.CompletableFuture;
 @Service
 public class InfractionQueryHandler {
     private QueryGateway queryGateway;
-
     @GetMapping("/All")
     public CompletableFuture<List<Infraction>> getAll(){
         return queryGateway.query(new GetAllInfractions(), ResponseTypes.multipleInstancesOf(Infraction.class));
     }
-
     @GetMapping("/byIdProprietaire/{id}")
     public CompletableFuture<List<Infraction>> getByIdProprietaire(@PathVariable String id){
         return queryGateway.query(new GetInfractionsByProprietaire(id), ResponseTypes.multipleInstancesOf(Infraction.class));
     }
-
     @GetMapping("/byIdVehicule/{id}")
     public CompletableFuture<List<Infraction>> getByIdVehicule(@PathVariable String id){
         return queryGateway.query(new GetInfractionsByVehicle(id), ResponseTypes.multipleInstancesOf(Infraction.class));
@@ -39,11 +36,8 @@ public class InfractionQueryHandler {
     public CompletableFuture<List<Infraction>> getByOwnerId(@PathVariable String id){
         return queryGateway.query(new GetInfractionsByOwnerId(id), ResponseTypes.multipleInstancesOf(Infraction.class));
     }
-
     @GetMapping("/byId/{id}")
     public CompletableFuture<Infraction> getById(@PathVariable String id){
         return queryGateway.query(new GetInfraction(id), ResponseTypes.instanceOf(Infraction.class));
     }
-
-
 }

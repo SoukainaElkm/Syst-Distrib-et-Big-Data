@@ -22,7 +22,6 @@ public class InfractionAggregate {
 
     public InfractionAggregate() {
     }
-
     @CommandHandler
     public InfractionAggregate(CreateInfractionCommand command) {
         if (command.getMatricule() == null || command.getMatricule().isEmpty()) {

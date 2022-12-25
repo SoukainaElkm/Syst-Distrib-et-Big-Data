@@ -19,7 +19,6 @@ import java.util.concurrent.CompletableFuture;
 @Service
 public class VehiculeCommandController {
     private CommandGateway commandGateway;
-
     @PostMapping(path = "/create")
     public CompletableFuture<String> createVehicule(@RequestBody CreateVehiculeRequestDTO createVehiculeRequestDTO) {
         CompletableFuture<String> response = commandGateway.send(new CreateVehiculeCommand(

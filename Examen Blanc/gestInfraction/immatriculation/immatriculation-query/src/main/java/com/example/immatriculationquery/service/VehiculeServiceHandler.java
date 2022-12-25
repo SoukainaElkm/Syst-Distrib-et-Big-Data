@@ -24,7 +24,6 @@ import java.util.List;
 public class VehiculeServiceHandler {
     private VehiculeRepository vehiculeRepository;
     private OwnerRepository ownerRepository;
-
     @EventHandler
     @Transactional
     public void on(VehiculeCreatedEvent event) {
@@ -40,21 +39,16 @@ public class VehiculeServiceHandler {
         vehicule.setProprietaireId(owner.getId());
         vehiculeRepository.save(vehicule);
     }
-
-
     @QueryHandler
     public List<Vehicule> on(GetVehicules query) {
         return vehiculeRepository.findAll();
     }
-
     @QueryHandler
     public Vehicule on(GetVehicule query) {
         return vehiculeRepository.findById(query.getId()).get();
     }
-
     @QueryHandler
     public List<Vehicule> on(GetVehiculesByOwnerId query) {
         return vehiculeRepository.findByProprietaireIdEquals(query.getId());
     }
-
 }

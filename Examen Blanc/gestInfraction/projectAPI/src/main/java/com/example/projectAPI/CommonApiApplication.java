@@ -1,4 +1,4 @@
-package com.enset.commonapi;
+package com.example.projectAPI;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

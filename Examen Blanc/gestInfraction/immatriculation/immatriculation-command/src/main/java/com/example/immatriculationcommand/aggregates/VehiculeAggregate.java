@@ -21,7 +21,6 @@ public class VehiculeAggregate {
     public VehiculeAggregate() {
         // Required by Axon
     }
-
     @CommandHandler
     public VehiculeAggregate(CreateVehiculeCommand command) {
         if (command.getMatricule() == null || command.getMatricule().isEmpty()) {

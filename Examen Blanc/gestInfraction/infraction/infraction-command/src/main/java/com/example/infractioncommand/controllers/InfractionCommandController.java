@@ -19,7 +19,6 @@ import java.util.concurrent.CompletableFuture;
 @Service
 public class InfractionCommandController {
     private CommandGateway commandGateway;
-
     @PostMapping("/create")
     public CompletableFuture<String> create(@RequestBody InfractionCreationRequestDTO infractionCreationRequestDTO){
         CompletableFuture<String> response = commandGateway.send(new CreateInfractionCommand(

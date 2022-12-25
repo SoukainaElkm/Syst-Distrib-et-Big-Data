@@ -20,5 +20,4 @@ public class Owner {
     private String email;
     @OneToMany(mappedBy = "owner")
     private List<Vehicule> vehicules;
-
 }

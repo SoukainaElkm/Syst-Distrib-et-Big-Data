@@ -19,7 +19,6 @@ import java.util.concurrent.CompletableFuture;
 @Service
 public class OwnerCommandController {
     private CommandGateway commandGateway;
-
     @PostMapping(path = "/create")
     public CompletableFuture<String> createOwner(@RequestBody CreateOwnerRequestDTO createOwnerRequestDTO) {
         CompletableFuture<String> response = commandGateway.send(new CreateOwnerCommand(

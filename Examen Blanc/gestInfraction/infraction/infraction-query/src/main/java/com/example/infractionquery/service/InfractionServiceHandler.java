@@ -20,7 +20,6 @@ import java.util.List;
 @Slf4j
 public class InfractionServiceHandler {
     private InfractionRepository infractionRepository;
-
     @EventHandler
     public void on(InfractionCreatedEvent event) {
         log.info("InfractionCreatedEvent: {}");
