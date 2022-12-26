@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Examen Blanc.iml" filepath="$PROJECT_DIR$/.idea/Examen Blanc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/eureka-discovery/eureka-discovery.iml" filepath="$PROJECT_DIR$/gestInfraction/eureka-discovery/eureka-discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/gateway/gateway.iml" filepath="$PROJECT_DIR$/gestInfraction/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/gestInfraction.iml" filepath="$PROJECT_DIR$/gestInfraction/gestInfraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/immatriculation/immatriculation.iml" filepath="$PROJECT_DIR$/gestInfraction/immatriculation/immatriculation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/immatriculation/immatriculation-command/immatriculation-command.iml" filepath="$PROJECT_DIR$/gestInfraction/immatriculation/immatriculation-command/immatriculation-command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/immatriculation/immatriculation-query/immatriculation-query.iml" filepath="$PROJECT_DIR$/gestInfraction/immatriculation/immatriculation-query/immatriculation-query.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/infraction/infraction.iml" filepath="$PROJECT_DIR$/gestInfraction/infraction/infraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/projectAPI/projectAPI.iml" filepath="$PROJECT_DIR$/gestInfraction/projectAPI/projectAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/radar/radar.iml" filepath="$PROJECT_DIR$/gestInfraction/radar/radar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/radar/radar-command/radar-command.iml" filepath="$PROJECT_DIR$/gestInfraction/radar/radar-command/radar-command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestInfraction/radar/radar-query/radar-query.iml" filepath="$PROJECT_DIR$/gestInfraction/radar/radar-query/radar-query.iml" />
+    </modules>
+  </component>
+</project>

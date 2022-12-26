@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="projectAPI" />
+        <module name="eureka-discovery" />
+        <module name="gateway" />
+      </profile>
+      <profile name="Annotation profile for gestInfraction" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+        </processorPath>
+        <module name="radar-query" />
+        <module name="radar-command" />
+        <module name="immatriculation-command" />
+        <module name="immatriculation-query" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-discovery" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="gestInfraction" target="1.8" />
+      <module name="immatriculation" target="1.8" />
+      <module name="immatriculation-command" target="1.8" />
+      <module name="immatriculation-query" target="1.8" />
+      <module name="infraction" target="1.8" />
+      <module name="projectAPI" target="1.8" />
+      <module name="radar" target="1.8" />
+      <module name="radar-command" target="1.8" />
+      <module name="radar-query" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-discovery" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="gestInfraction" options="-parameters" />
+      <module name="immatriculation" options="-parameters" />
+      <module name="immatriculation-command" options="-parameters" />
+      <module name="immatriculation-query" options="-parameters" />
+      <module name="infraction" options="-parameters" />
+      <module name="projectAPI" options="-parameters" />
+      <module name="radar" options="-parameters" />
+      <module name="radar-command" options="-parameters" />
+      <module name="radar-query" options="-parameters" />
+    </option>
+  </component>
+</project>
